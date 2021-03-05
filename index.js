@@ -188,7 +188,7 @@ client.on('message', message => {
         VC.join()
             .then(connection => {
                 dispatcher = connection.play(require("path").join(__dirname, './sounds/kaamelott-trompette.mp3'), { volume: 1 });
-                dispatcher.on("end", end => { VC.leave() });
+                dispatcher.on("finish", () => { VC.leave() });
             })
             .catch(console.error);
     };
