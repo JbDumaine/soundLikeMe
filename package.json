@@ -1,0 +1,20 @@
+{
+  "name": "soundslikeme",
+  "version": "1.0.0",
+  "description": "First discord bot project. Bot will play sound when choosen user join channel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "nodejs",
+    "discord.js"
+  ],
+  "author": "jbdumaine",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
