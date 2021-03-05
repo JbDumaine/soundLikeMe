@@ -33,7 +33,7 @@ client.on("voiceStateUpdate", (oldVoiceState, newVoiceState) => { // Listeing to
                     return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
                 VC.join()
                     .then(connection => {
-                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis_gay.mp3'), { volume: 1 });
+                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis.mp3'), { volume: 1 });
                         dispatcher.on("finish", end => {
                             console.log("Bot left")
                             VC.leave()
@@ -49,7 +49,7 @@ client.on("voiceStateUpdate", (oldVoiceState, newVoiceState) => { // Listeing to
                     return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
                 VC.join()
                     .then(connection => {
-                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis_gay.mp3'), { volume: 1 });
+                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis.mp3'), { volume: 1 });
                         dispatcher.on("finish", end => {
                             console.log("Bot left")
                             VC.leave()
@@ -84,7 +84,7 @@ client.on("voiceStateUpdate", (oldVoiceState, newVoiceState) => { // Listeing to
                     return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
                 VC.join()
                     .then(connection => {
-                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis_gay.mp3'), { volume: 1 });
+                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis.mp3'), { volume: 1 });
                         dispatcher.on("finish", end => {
                             console.log("Bot left")
                             VC.leave()
@@ -100,7 +100,7 @@ client.on("voiceStateUpdate", (oldVoiceState, newVoiceState) => { // Listeing to
                     return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
                 VC.join()
                     .then(connection => {
-                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis_gay.mp3'), { volume: 1 });
+                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis.mp3'), { volume: 1 });
                         dispatcher.on("finish", end => {
                             console.log("Bot left")
                             VC.leave()
