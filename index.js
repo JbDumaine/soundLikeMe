@@ -27,7 +27,7 @@ client.on("voiceStateUpdate", (oldVoiceState, newVoiceState) => { // Listeing to
     if (oldVoice != newVoice) {
         if (oldVoice == null) {
             console.log("User joined!");
-            if (newVoiceState.member.user.id === "677900913381212191") {
+            if (newVoiceState.member.user.id === "349261662911725571") {
                 var VC = newVoiceState.member.voice.channel;
                 if (!VC)
                     return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
@@ -43,16 +43,80 @@ client.on("voiceStateUpdate", (oldVoiceState, newVoiceState) => { // Listeing to
                     .catch(console.error);
 
             }
-        } else if (newVoice == null) {
-            console.log("User left!");
-        } else {
-            if (newVoiceState.member.user.id === "677900913381212191") {
+            if (newVoiceState.member.user.id === "636938605734002688") {
                 var VC = newVoiceState.member.voice.channel;
                 if (!VC)
                     return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
                 VC.join()
                     .then(connection => {
                         dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis_gay.mp3'), { volume: 1 });
+                        dispatcher.on("finish", end => {
+                            console.log("Bot left")
+                            VC.leave()
+                            //message.reply("JE ME CASSE PETITE ...")
+                        });
+                    })
+                    .catch(console.error);
+
+            }
+            if (newVoiceState.member.user.id === "692652380721774606") {
+                var VC = newVoiceState.member.voice.channel;
+                if (!VC)
+                    return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
+                VC.join()
+                    .then(connection => {
+                        dispatcher = connection.play(require("path").join(__dirname, './sounds/pentakill.mp3'), { volume: 1 });
+                        dispatcher.on("finish", end => {
+                            console.log("Bot left")
+                            VC.leave()
+                            //message.reply("JE ME CASSE PETITE ...")
+                        });
+                    })
+                    .catch(console.error);
+
+            }
+        } else if (newVoice == null) {
+            console.log("User left!");
+        } else {
+            if (newVoiceState.member.user.id === "349261662911725571") {
+                var VC = newVoiceState.member.voice.channel;
+                if (!VC)
+                    return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
+                VC.join()
+                    .then(connection => {
+                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis_gay.mp3'), { volume: 1 });
+                        dispatcher.on("finish", end => {
+                            console.log("Bot left")
+                            VC.leave()
+                            //message.reply("JE ME CASSE PETITE ...")
+                        });
+                    })
+                    .catch(console.error);
+
+            }
+            if (newVoiceState.member.user.id === "636938605734002688") {
+                var VC = newVoiceState.member.voice.channel;
+                if (!VC)
+                    return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
+                VC.join()
+                    .then(connection => {
+                        dispatcher = connection.play(require("path").join(__dirname, './sounds/je_suis_gay.mp3'), { volume: 1 });
+                        dispatcher.on("finish", end => {
+                            console.log("Bot left")
+                            VC.leave()
+                            //message.reply("JE ME CASSE PETITE ...")
+                        });
+                    })
+                    .catch(console.error);
+
+            }
+            if (newVoiceState.member.user.id === "692652380721774606") {
+                var VC = newVoiceState.member.voice.channel;
+                if (!VC)
+                    return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
+                VC.join()
+                    .then(connection => {
+                        dispatcher = connection.play(require("path").join(__dirname, './sounds/pentakill.mp3'), { volume: 1 });
                         dispatcher.on("finish", end => {
                             console.log("Bot left")
                             VC.leave()
