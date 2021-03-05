@@ -1,0 +1,1 @@
+I just want to try to create a discord bot. It s for fun ! Bot that play funny sound when friend join voice channel :)
